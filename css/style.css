@@ -486,7 +486,7 @@ h3.my-profession{
 .info-item-left p i{
     color: var(--skin-color);
     margin-right: 15px;
-    font-size: 25px;
+    font-size: 20px;
 }
 .social-icons{
     margin-top: 30px;
@@ -534,4 +534,53 @@ h3.my-profession{
     height: 50px;
     padding: 0 50px;
     cursor: pointer;
+}
+@media (max-width:1199px){
+    .aside{
+        left: -270px;
+    }
+    .main-content{
+        padding: 0;
+    }
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
+@media (max-width:991px){
+    .home .home-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img{
+        display: none;
+    } 
+    .portfolio .portfolio-item,
+    .service .service-list{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .info-item-left,
+    .info-item-right{
+        flex-basis: 100%;
+    }
+    .info-item-left div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+    .info-item-left div p + p{
+        margin-top: 0;
+    }
+    .info-item-right{
+        margin-top: 50px;
+    }
+}
+@media (max-width:767px){
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
