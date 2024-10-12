@@ -401,9 +401,6 @@ h3.my-profession{
     position: relative;
 }
 /* services */
-.services{
-    padding: 30px 0;
-}
 .service-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -417,15 +414,22 @@ h3.my-profession{
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .service-list div i{
     font-size: 50px;
     margin-bottom: 30px;
+    color: var(--skin-color);
 }
 .service-list div h3{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
+    text-align: center;
+    color: var(--skin-color);
 }
 .service-list div:hover{
     background: var(--skin-color);
@@ -567,7 +571,7 @@ h3.my-profession{
     .info-item-left div{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;   
         gap: 40px;
     }
     .info-item-left div p + p{
@@ -578,8 +582,16 @@ h3.my-profession{
     }
 }
 @media (max-width:767px){
+    .contact .contact-form .col-6,
+    .portfolio .portfolio-item,
     .about .about-content .skills,
     .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .services .service-list{
+        display: flex;
+        flex-direction: column;
         flex: 0 0 100%;
         max-width: 100%;
     }
