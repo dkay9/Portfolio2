@@ -6,6 +6,13 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 }
+body.dark{
+    --bg-black-900: #151515;
+    --bg-black-100: #222222;
+    --bg-black-50: #393939;
+    --text-black-900: #ffffff;
+    --text-black-700: #e9e9e9;
+}
 body{
     line-height: 1.5;
     font-size: 16px;
@@ -433,9 +440,11 @@ h3.my-profession{
     color: var(--skin-color);
 }
 .service-list div:hover{
-    /* background: var(--skin-color); */
     transform: translateY(-10px);
 
+}
+.service-list div p{
+    color: var(--text-black-700);
 }
 /* Portfolio */
 .portfolio .container{
@@ -492,6 +501,9 @@ h3.my-profession{
     color: var(--skin-color);
     margin-right: 15px;
     font-size: 20px;
+}
+.info-item-left > div:first-child{
+    color: var(--text-black-700);
 }
 .social-icons{
     margin-top: 30px;
